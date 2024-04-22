@@ -1,0 +1,6 @@
+
+#!/bin/bash
+ 
+mkdir $2
+cp --backup=t $(find $1 -type f) $2
+tar -cvf $3.tar $2
